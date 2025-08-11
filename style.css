@@ -1,0 +1,129 @@
+
+
+/* }
+
+
+
+#first-pin img{
+    width:208px;
+    height: 154px;
+    border-radius: 10px;
+    display: flex;
+}
+#first-pin button{
+    height: 20px;
+    width: 53px;
+   padding:3px 10px 4px 10px;
+    border-radius: 14px;
+    background-color: #008080;
+    color:white;
+}
+
+#first-card img{
+    width:128px;
+    height:100px;
+    padding:8px;
+
+} */
+ *{margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ banner-card{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .banner-card img{
+  height:218px;
+  max-width: 100%;
+  margin-top:5px;
+  border-radius: 10px;
+ }
+ /* .banner-card button{
+    height: 20px;
+    width: 53px;
+   padding:20px 60px;
+    border-radius: 14px;
+    background-color: #008080;
+    color:white;
+ } */
+ 
+
+ 
+  .banner-text{
+    position:absolute;
+   top:25%;
+   color:whitesmoke;
+   padding: 10px;
+    
+  }
+
+
+  #second-container img{
+       width:58px;
+    height: 58px;
+    border-radius: 10px;
+    
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:100px;
+}
+.card {
+    width:325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.02);
+    margin:20px;
+
+}
+.card img{
+    width:100%;
+    height: auto;
+    
+     
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 10px;
+}
+
+ .material-symbols-outlined {
+      font-size: 24px; 
+      color:#f8f8f8; 
+    }
+
+    button {
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px; 
+      cursor: pointer;
+    }
+
+  
+
+@media only screen and (max-width: 768px) {
+      .banner-card {
+        display: flex;
+        justify-content: space-between;
+        /* flex-wrap: nowrap;  */
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+      }
+
+      .banner-text {
+        flex-shrink: 0; 
+        width: 150px;
+      }
+    }

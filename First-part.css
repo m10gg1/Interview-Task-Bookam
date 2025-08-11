@@ -1,0 +1,46 @@
+.container {
+      display: flex; /* Or display: grid; for a grid layout */
+      flex-wrap: wrap; /* Or use grid-template-columns */
+      gap: 20px; /* Space between items */
+    }
+
+    .item {
+      /* Basic styling for items */
+      width: 400px;
+      height: 150px;
+      margin-top:5px;
+  border-radius: 10px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+  
+ .item img{
+  width: 100%;
+ }
+
+  
+ .banner-text{
+    
+    position:absolute;
+   top:25%;
+   color:whitesmoke;
+   padding: 10px;
+    
+  }
+ 
+
+  @media only screen and (max-width: 768px) {
+      .container {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping to force a single row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Enhance scrolling on iOS */
+      }
+
+      .item {
+        flex-shrink: 0; /* Prevent items from shrinking */
+        /* You might want to adjust item width for mobile */
+        width: 150px;
+      }
+    }
